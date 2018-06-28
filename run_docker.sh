@@ -42,6 +42,5 @@ $(echo $docker_run_cmd) \
     -e XAUTHORITY=$dHOME_FOLDER/.Xauthority \
     -v /tmp/.X11-unix:/tmp/.X11-unix:rw \
     -v $HOME/.Xauthority:$dHOME_FOLDER/.Xauthority \
-    -v $HOME/V-REP_PRO_EDU_V3_5_0_Linux:$dHOME_FOLDER/v-rep \
     -v $HOME:/mnt \
     -it $IMAGE_NAME "$@"

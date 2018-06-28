@@ -32,9 +32,9 @@ catkin init
 cd src/
 git clone https://github.com/CoppeliaRobotics/v_repExtRosInterface.git
 
-cp -r /mnt/Downloads/v_repStubsGen-9125e020d5b754bdabb2f575a12d52fc55a782d8/* /tmp/quickstart_ws/src/v_repExtRosInterface/external/v_repStubsGen/
-cp -r /mnt/Downloads/v_repPlusPlus-cb31df76dac19580cbf2b071e431b3c4e8f2d8f2/* /tmp/quickstart_ws/src/v_repExtRosInterface/external/v_repPlusPlus/
-cp -r /mnt/Downloads/PyCPP-c5ec1cf71c303d1115342cc18f74b8902b0f0c8e/* /tmp/quickstart_ws/src/v_repExtRosInterface/external/v_repStubsGen/external/pycpp/
+cp -r /mnt/Downloads/v_repStubsGen/* /tmp/quickstart_ws/src/v_repExtRosInterface/external/v_repStubsGen/
+cp -r /mnt/Downloads/v_repPlusPlus/* /tmp/quickstart_ws/src/v_repExtRosInterface/external/v_repPlusPlus/
+cp -r /mnt/Downloads/PyCPP/* /tmp/quickstart_ws/src/v_repExtRosInterface/external/v_repStubsGen/external/pycpp/
 
 add below code to cmakelist.txt
 set(roslib_LIBRARIES "/opt/ros/kinetic/lib/roslib")
