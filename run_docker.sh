@@ -31,7 +31,7 @@ if [ "$docker_user" = "" ]; then
 else
     dHOME_FOLDER="/home/$docker_user"    
 fi
-
+xhost +local:root
 # Run the container with NVIDIA Graphics acceleration, shared network interface, shared hostname, shared X11
 $(echo $docker_run_cmd) \
     --net=host \
